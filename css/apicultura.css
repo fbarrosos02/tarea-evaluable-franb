@@ -64,79 +64,167 @@ nav a:hover {
     width: 20px; 
 }
 
-/* Estilos de la sección principal */
+/* estilos de la seccion principal */
 #apicultura-sierra-gata {
-    background-color: #f9f5f1; 
-    padding: 60px 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    width: 80%;
-    text-align: left;
-  }
-  
-  #apicultura-sierra-gata h1 {
-    font-size: 32px;
-    color: #2A3D45;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  #apicultura-sierra-gata h2 {
-    font-size: 24px;
-    color: #FF922F;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #0000002e; 
-    border-radius: 4%;
-    padding: 10px;
-  }
-  
-  #apicultura-sierra-gata p, #apicultura-sierra-gata ul {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  #apicultura-sierra-gata ul {
-    list-style: none;
-  }
-  
-  #apicultura-sierra-gata li {
-    padding-left: 25px;
-    position: relative;
-    margin-bottom: 10px;
-  }
-  
-  #apicultura-sierra-gata li::before {
-    content: "🍯"; 
-    position: absolute;
-    left: 0;
-    color: #FF922F;
-    font-size: 20px;
-  }
-  
-  #apicultura-sierra-gata p {
-    margin-bottom: 20px;
-  }
-  
-  /* Botón de acción para enlaces o CTA */
-  #apicultura-sierra-gata a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #FF922F;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  #apicultura-sierra-gata a:hover {
-    background-color: #e77f26;
-  }
-  
+  background-color: #f9f5f1;
+  padding: 60px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 80%;
+  text-align: left;
+  position: relative;
+  background-image: url("img/sierra-gata-bg.jpg"); 
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  overflow: hidden;
+}
+
+
+#apicultura-sierra-gata h1, #apicultura-sierra-gata h2, #apicultura-sierra-gata p, #apicultura-sierra-gata ul {
+  position: relative;
+  z-index: 2;
+}
+
+#apicultura-sierra-gata h1 {
+  font-size: 36px;
+  color: #2A3D45;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#apicultura-sierra-gata h2 {
+  font-size: 24px;
+  color: #FF922F;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#apicultura-sierra-gata p, #apicultura-sierra-gata ul {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin: auto;
+}
+
+#apicultura-sierra-gata ul {
+  list-style: none;
+}
+
+#apicultura-sierra-gata li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#apicultura-sierra-gata li::before {
+  content: "🍯";
+  position: absolute;
+  left: 0;
+  color: #FF922F;
+  font-size: 20px;
+}
+
+#apicultura-sierra-gata .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#apicultura-sierra-gata .galeria img {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#apicultura-sierra-gata .galeria img:hover {
+  transform: scale(1.05);
+}
+
+/*boton de tienda*/
+#apicultura-sierra-gata a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #FF922F;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#apicultura-sierra-gata a:hover {
+  background-color: #e77f26;
+}
+
+/*formulario */ 
+#contacto {
+  width: 80%; 
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea, select{
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: #FF922F; 
+  outline: none;
+}
+
+textarea {
+  resize: vertical; 
+  min-height: 150px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #FF922F; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e77f26;
+}
