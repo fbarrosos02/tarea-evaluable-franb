@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Sitio Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- header -->
+<header id="header">
+    <div id="logo-texto">
+        <img src="img/logo.PNG" alt="Logo de la pagina web" id="logo">
+        <div id="texto">
+            <p>Apicultores</p>
+            <p>Sierra de Gata</p>
+        </div>
+    </div>
+    
+    <button id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="/tienda.html">Miel</a></li>
+            <li><a href="/tienda.html">Otros Productos</a></li>
+            <li><a href="/apicultura.html">Apicultura</a></li>
+            <li><a href="https://turisgata.com/naturaleza/">Sierra de Gata</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- seccion de inicio -->
+     <section id="inicio">
+        <h2>Apicultura en la sierra de gata</h2>
+        <p>En la Sierra de Gata, nuestras abejas trabajan en armonía con la naturaleza para crear mieles artesanales de excepcional calidad. Cada variedad es un reflejo de la diversidad floral de nuestra región. Descubre el sabor auténtico de nuestra tierra y disfruta de los beneficios de un producto 100% natural</p>     </section>
+ 
+    <!-- seccion sobre nosotros -->
+   <section id="nuestros-productos">
+    <h2>Nuestros Productos: Un Tesoro de la Colmena</h2>
+    <ul>
+        <li><b> Miel: Un clásico con infinitas posibilidades.</b> Desde la suave miel de mil flores hasta la intensa miel de romero, cada variedad te ofrece una experiencia única. Ideal para endulzar tus desayunos, postres y bebidas.</li>
+        <li><b> Polen: Un superalimento lleno de energía y nutrientes </b>. Nuestro polen es recolectado directamente de las colmenas y conserva todas sus propiedades. Perfecto para deportistas y para reforzar el sistema inmunológico.</li>
+        <li><b> Propóleo: Un potente antioxidante con propiedades antibacterianas y antiinflamatorias.</b> Nuestro propóleo es utilizado en la elaboración de productos naturales para el cuidado de la salud.</li>
+        <li><b> Jalea Real: Considerada el alimento de las reinas</b>, la jalea real es un producto altamente nutritivo con propiedades regeneradoras y energizantes.</li>
+    </ul>
+
+    <p>¿Quieres conocer más sobre nuestros productos? Visita nuestra tienda online y descubre todas las opciones disponibles. También puedes contactarnos para realizar un pedido personalizado.</p>
+   </section>
+
+    <!-- seccion de galeria -->
+    <section id="galeria-imagenes">
+        <h2>Galería de Imágenes</h2>
+        <div class="galeria">
+            <img src="img/galeria5.jpg" alt="">
+            <img src="img/galeria1.jpg" alt="">
+            <img src="img/galeria4.jpg" alt="">
+        </div>
+    </section>
+    
+
+    <!-- sección de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Tu email">
+          
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" pattern="[0-9]{9}">
+          
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" required placeholder="Asunto de tu mensaje">
+          
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí"></textarea>
+          
+          <label for="preferencia-contacto">Preferencia de Contacto:</label>
+          <select id="preferencia-contacto" name="preferencia-contacto">
+              <option value="email">Email</option>
+              <option value="telefono">Teléfono</option>
+          </select>    
+          <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- pie de pagina -->
+<footer id="footer">
+    <div class="footer-contenedor">
+        <div class="footer-logo">
+            <img src="img/logo.PNG" alt="Logo de la página web" id="footer-logo">
+            <p>Apicultores de la Sierra de Gata</p>
+        </div>
+
+        <div class="footer-contacto">
+            <h3>Contacto</h3>
+            <p>Email: info@sierradegata.com</p>
+            <p>Teléfono: +34 123 456 789</p>
+            <p>Dirección: Sierra de Gata, Extremadura, España</p>
+        </div>
+
+    </div>
+    <p class="footer-copy">&copy; 2024 Apicultores de la Sierra de Gata. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+const header = document.getElementById('header');
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+
+});
+
+</script>
+</body>
+</html>

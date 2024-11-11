@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div id="logo-texto">
+            <img src="img/logo.PNG" alt="Logo de la pagina web" id="logo">
+            <div id="texto">
+                <p>Apicultores</p>
+                <p>Sierra de Gata</p>
+            </div>
+        </div>
+        
+        <button id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="/tienda.html">Miel</a></li>
+                <li><a href="/tienda.html">Otros Productos</a></li>
+                <li><a href="/apicultura.html">Apicultura</a></li>
+                <li><a href="https://turisgata.com/naturaleza/">Sierra de Gata</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+
+    <section id="apicultura-sierra-gata">
+        <h1>La Apicultura en la Sierra de Gata: Un Dulce Néctar de la Naturaleza</h1>
+        <p>La Sierra de Gata, con sus extensos bosques, dehesas y una rica biodiversidad, ofrece un entorno idóneo para la apicultura. Este oficio ancestral, transmitido de generación en generación, ha encontrado en este paraje extremeño un hogar excepcional.</p>
+    
+        <h2>¿Por qué la Sierra de Gata es un paraíso para las abejas?</h2>
+        <ul>
+            <li><strong>Flora variada:</strong> La gran diversidad de plantas silvestres proporciona un suministro continuo de néctar y polen, resultando en una miel de gran calidad y sabor característico.</li>
+            <li><strong>Entorno limpio y libre de contaminantes:</strong> Al ser una zona protegida, la Sierra de Gata está libre de contaminación industrial, garantizando una miel pura y natural.</li>
+            <li><strong>Clima mediterráneo:</strong> Las temperaturas suaves y las precipitaciones adecuadas crean las condiciones perfectas para las colmenas y la producción de miel.</li>
+        </ul>
+    
+        <h2>Galería de Imágenes</h2>
+        <div class="galeria">
+            <img src="img/galeria1.jpg" alt="">
+            <img src="img/galeria2.jpg" alt="">
+            <img src="img/galeria4.jpg" alt="">
+        </div>
+    
+        <h2>Características de la Miel de la Sierra de Gata</h2>
+        <ul>
+            <li><strong>Sabor intenso y complejo:</strong> La variedad de flores le otorga un sabor único, aromático y variable según la época del año.</li>
+            <li><strong>Color ámbar:</strong> La miel suele tener un color ámbar intenso, reflejo de su rica variedad de polen.</li>
+            <li><strong>Propiedades saludables:</strong> Rica en vitaminas, minerales y antioxidantes, la miel de la Sierra de Gata es beneficiosa para la salud.</li>
+        </ul>
+    
+        <a href="/tienda.html">Descubre nuestra miel</a>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Tu email">
+          
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" pattern="[0-9]{9}">
+          
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" required placeholder="Asunto de tu mensaje">
+          
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí"></textarea>
+          
+          <label for="preferencia-contacto">Preferencia de Contacto:</label>
+          <select id="preferencia-contacto" name="preferencia-contacto">
+              <option value="email">Email</option>
+              <option value="telefono">Teléfono</option>
+          </select>    
+          <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <img src="img/logo.PNG" alt="Logo de la página web" id="footer-logo">
+                <p>Apicultores de la Sierra de Gata</p>
+            </div>
+    
+            <div class="footer-contacto">
+                <h3>Contacto</h3>
+                <p>Email: info@sierradegata.com</p>
+                <p>Teléfono: +34 123 456 789</p>
+                <p>Dirección: Sierra de Gata, Extremadura, España</p>
+            </div>
+    
+        </div>
+        <p class="footer-copy">&copy; 2024 Apicultores de la Sierra de Gata. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>

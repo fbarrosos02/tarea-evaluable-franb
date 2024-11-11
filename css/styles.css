@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #2A3D45;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+#logo-texto {
+    display: flex;
+    align-items: center;
+}
+#logo {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+#texto p {
+    font-size: 18px;
+    color: #FF922F;
+    margin: 0;
+}
+
+/*botón hamburguesa */
+
+.menu-toggle {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10; 
+}
+.menu-toggle .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    color: #FF922F;
+    background-color: #555;
+}
+#carrito {
+    width: 20px; 
+}
+
+/* Estilos para la sección de inicio */
+
+#inicio {
+  background-image: url("img/inicio-sierra-de-gata.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px ;
+  color: #fff;
+  position: relative;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+ height: 500px;
+
+}
+#inicio::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.5); 
+ border-radius: 10px;
+ z-index: 1;
+}
+
+#inicio h2, #inicio p {
+ position: relative;
+ z-index: 2; 
+}
+
+
+#inicio h2 {
+ font-size: 32px;
+ color: #FF922F; 
+ margin-bottom: 20px;
+ margin-top: 0;
+ font-weight: bold;
+ text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+ align-self: flex-start;
+
+}
+
+#inicio p {
+ font-size: 18px;
+ line-height: 1.6;
+ color: #f4f4f4;
+ max-width: 700px;
+ margin: 0 ;
+ text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*estilos para nuestros productos  REVISAR */
+#nuestros-productos {
+  background-color: #f9f5f1; 
+  padding: 60px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-align: center;
+}
+
+#nuestros-productos h2 {
+  font-size: 30px;
+  color: #2A3D45;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#nuestros-productos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#nuestros-productos li {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+#nuestros-productos li::before {
+  content: "🍯"; 
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  color: #FF922F; 
+}
+
+#nuestros-productos p {
+  font-size: 18px;
+  color: #555;
+  padding: 20px;
+  line-height: 1.6;
+  margin: 0 auto;
+
+}
+
+/* Seccion Galeria  REVISAR */
+
+#galeria {
+  position: relative;
+  width: 30%; 
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 300px; 
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+button.prev, button.next {
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 15%;
+}
+
+button.prev {
+align-self:flex-start ;
+}
+
+button.next {
+align-self: flex-end;
+}
+
+button.prev:hover, button.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*Formulario */ 
+#contacto {
+  width: 80%; /* Ancho del formulario */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea, select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: #FF922F; /* Resalta el borde en naranja al hacer foco */
+  outline: none;
+}
+
+textarea {
+  resize: vertical; /* Permite cambiar el tamaño verticalmente */
+  min-height: 150px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #FF922F; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e77f26; /* Cambia el color al pasar el mouse */
+}
+
+
+
+/* Media Query para pantallas pequeñas */
+
+@media (max-width: 1020px) {
+
+    header{
+        width: 100%;
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999; 
+    }
+    .menu-toggle {
+        display: flex; 
+    }
+    #nav-menu {
+        display: none; 
+        width: 100%;
+        background-color: #2A3D45;
+        position: absolute;
+        top: 100px; 
+        left: 0;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #nav-menu.active {
+        display: block;
+    }
+
+    nav ul {
+        background-color: none ;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    #galeria {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+    }
+  
+   
